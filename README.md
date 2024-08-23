@@ -1,5 +1,5 @@
 # Healy
-Healy é a inteligência artificial de detecção de potencial ao desenvolvimebnto de uma enfermidade. Com esse código, identificamos padrões para doenças no rim e agrupamos os pacientes.
+Healy é a inteligência artificial de detecção de potencial ao desenvolvimento de uma enfermidade. Com esse código, identificamos padrões para doenças no rim e agrupamos os pacientes.
 
 🔔 **Importante:** você precisa possuir uma conta Google previamente cadastrada para acessar o Google Colab
 
