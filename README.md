@@ -12,6 +12,12 @@ Healy é a inteligência artificial de detecção de potencial ao desenvolviment
 4. Descompacte o ZIP para acessar o código em Python
 5. Pronto! Rode as linhas na ordem que aparecem no notebook :)
 
+
+## 🎉 Realizando download do dataset
+1. No notebook clique no link do dataset
+2. Faça o download
+3. Realize a descompactação
+4. Insira nos files do notebbok
 ## 
 
 ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)&nbsp;
