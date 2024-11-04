@@ -9,17 +9,15 @@ Original file is located at
 # Healy
 #### YOUR HEALTH AI
 
-Já desejou saber os riscos que permeiam sua saúde? Com Healy podemos identificar o padrão que aparece nos seus exames e com ele indicar a porcentagem de propensão à uma patologia levando você a conhecer mais sobre sua saúde.
+Já desejou saber os riscos que permeiam sua saúde? Com Healy podemos identificar o padrão que aparece nos seus exames e com ele indicar uma ação levando você a conhecer mais sobre sua saúde.
 
 <br>
 
 [Download do dataset](https://www.kaggle.com/datasets/davidechicco/chronic-kidney-disease-ehrs-abu-dhabi)
 
-*  Pegar informações inputadas no front-end ou fazer as correções de inputs e tratamento de strings
-*  Demonstrar que o modelo é capaz de se ajustar a outros datasets
-*  Ajustar resultados e tratamentos com base na instituição
+# Sprint 3
 
-# Importando modelo da Logistic Regression
+## Importando modelo da Logistic Regression
 Anteriormente foi realizada uma análise comparativa de modelos distintos com 2 tipos de validação e a melhor performance é oriunda do modelo de Regressão Logística com Stratified Fold.
 """
 
@@ -74,7 +72,7 @@ scores_stratified = cross_val_score(regression, X, y, cv=skf, scoring='accuracy'
 print("Acurácia em cada fold:", scores_stratified)
 print("Acurácia média:", scores_stratified.mean())
 
-"""# Importando dados do usuário
+"""## Importando dados do usuário
 Segundo demonstrado na primeira parte, as colunas mais importantes para identificação de uma possível ascensão a um quadro clínico de doença renal são:
 <br>
 Sex, AgeBaseline, HistoryDiabetes, HistoryCHD, HistoryVascular, HistorySmoking, HistoryHTN, HistoryDLD, DLDmeds, DMmeds, HTNmeds, ACEIARB, CreatinineBaseline e sBPBaseline
@@ -130,7 +128,7 @@ X_test = np.array(inputs).reshape(1, -1)
 # imprimindo o array
 print(X_test)
 
-"""# Aplicando o modelo
+"""## Aplicando o modelo
 Indicando tratamento ao usuário com base na probabilidade de desenvolvimento da enfermidade indicada pelo modelo comparativo Healy.
 """
 
@@ -163,7 +161,9 @@ else:
 6. Fazer exames de sangue e urina frequentemente
   """)
 
-"""# Embedding com Gemini
+"""# Sprint 4
+
+## Embedding com Gemini
 As dúvidas podem ser frequentes em quesitos médicos mas com uma pesquisa inteligente habilitada e capacitada por uma busca semântica em documentos com o Gemini, a inteligência artifificial do Google, a devolutiva para questões rápidas e pontuais pode economizar o tempo do médico e do paciente evitando esperas por respostas.
 Os documentos inseridos para busca semântica substituem um chatbot especializado e garantem que o paciente compreenda mais sobre o cenário oferecido visto que a instituição de saúde que utiliza o sistema pode inputar as informações que deseja que sejam conhecidas pelo paciente.
 
